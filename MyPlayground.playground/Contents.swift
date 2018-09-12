@@ -2,9 +2,11 @@
 
 import UIKit
 
-var str = "Hello, playground"
+import PlaygroundSupport
+var sum=0
+for i in 1...100{
+    sum=sum+i
+    print(i)
+}
 
-var a=1
-a=10
-var b=2
-let c=a+b
+print(sum)
