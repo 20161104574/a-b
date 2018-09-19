@@ -2,10 +2,11 @@
 
 import UIKit
 
+let numbers = [12,25,1,35,27]
 
-var array: Array<Int> = [3, 6, 1, 7, 2, 4, 9, 5, 8,0]
-array.sort(by: {(num1, num2) in
-    return num1 > num2
+let numbersSorted = numbers.sort({ n1, n2 in
+    //进行从小到大的排序
+    return n2 > n1
 })
-array
-print(array)
+
+print(numbersSorted) //[1, 12, 25, 27, 35]
